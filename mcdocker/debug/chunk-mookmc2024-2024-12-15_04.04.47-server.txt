@@ -1,0 +1,124 @@
+---- Minecraft Chunk IO Error Report ----
+// Remember to backup your worlds regularly
+
+Time: 2024-12-15 04:04:47
+Description: Chunk found in invalid location
+
+java.lang.IllegalStateException: Retrieved chunk position [-21, 23] does not match requested [-20, 23]
+	at dwg.a(SourceFile:20)
+	at dwg.a(SourceFile:30)
+	at dwk.a(SourceFile:66)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at bpk.h(SourceFile:91)
+	at bpk.a(SourceFile:146)
+	at bpk.run(SourceFile:102)
+	at aln.run(SourceFile:18)
+	at bph.d(SourceFile:162)
+	at bpl.d(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:864)
+	at net.minecraft.server.MinecraftServer.d(SourceFile:173)
+	at bph.B(SourceFile:136)
+	at net.minecraft.server.MinecraftServer.bv(SourceFile:846)
+	at net.minecraft.server.MinecraftServer.B(SourceFile:840)
+	at bph.bB(SourceFile:121)
+	at net.minecraft.server.MinecraftServer.v_(SourceFile:814)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:702)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: IO-Worker-16
+Stacktrace:
+	at dwg.a(SourceFile:20)
+	at dwg.a(SourceFile:30)
+	at dwk.a(SourceFile:66)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at bpk.h(SourceFile:91)
+	at bpk.a(SourceFile:146)
+	at bpk.run(SourceFile:102)
+	at aln.run(SourceFile:18)
+	at bph.d(SourceFile:162)
+	at bpl.d(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:864)
+	at net.minecraft.server.MinecraftServer.d(SourceFile:173)
+	at bph.B(SourceFile:136)
+	at net.minecraft.server.MinecraftServer.bv(SourceFile:846)
+	at net.minecraft.server.MinecraftServer.B(SourceFile:840)
+	at bph.bB(SourceFile:121)
+
+-- Misplaced Chunk --
+Details:
+	Stored Position: [-21, 23]
+Stacktrace:
+	at dwg.a(SourceFile:20)
+	at dwg.a(SourceFile:30)
+	at dwk.a(SourceFile:66)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at bpk.h(SourceFile:91)
+	at bpk.a(SourceFile:146)
+	at bpk.run(SourceFile:102)
+	at aln.run(SourceFile:18)
+	at bph.d(SourceFile:162)
+	at bpl.d(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:864)
+	at net.minecraft.server.MinecraftServer.d(SourceFile:173)
+	at bph.B(SourceFile:136)
+	at net.minecraft.server.MinecraftServer.bv(SourceFile:846)
+	at net.minecraft.server.MinecraftServer.B(SourceFile:840)
+	at bph.bB(SourceFile:121)
+	at net.minecraft.server.MinecraftServer.v_(SourceFile:814)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:702)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+-- Chunk Info --
+Details:
+	Level: mookmc2024
+	Dimension: minecraft:overworld
+	Storage: entities
+	Position: [-20, 23]
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.a(SourceFile:2008)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Linux (amd64) version 5.15.0-125-generic
+	Java Version: 21, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 3712222424 bytes (3540 MiB) / 8589934592 bytes (8192 MiB) up to 10737418240 bytes (10240 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: QEMU Virtual CPU version 2.5+
+	Identifier: Intel64 Family 15 Model 107 Stepping 1
+	Microarchitecture: Netburst
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 9463.09
+	Virtual memory used (MiB): 6167.07
+	Swap memory total (MiB): 3919.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 45056.39, total: 77374.98
+	Space in storage for workdir (MiB): available: 45056.39, total: 77374.98
+	JVM Flags: 2 total; -Xmx10G -Xms8G

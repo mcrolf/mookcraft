@@ -1,0 +1,61 @@
+---- Minecraft Crash Report ----
+// Sorry :(
+
+Time: 2024-12-30 02:58:23
+Description: Exception in server tick loop
+
+com.google.gson.JsonSyntaxException: Expected entry to be a JsonObject, was "Fif...MC"
+	at ayp.m(SourceFile:414)
+	at avi.f(SourceFile:124)
+	at apt.z(SourceFile:85)
+	at apt.<init>(SourceFile:24)
+	at apu.e(SourceFile:174)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:678)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:292)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.4
+	Minecraft Version ID: 1.21.4
+	Operating System: Linux (amd64) version 5.15.0-127-generic
+	Java Version: 21.0.5, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 4038092736 bytes (3851 MiB) / 4294967296 bytes (4096 MiB) up to 8589934592 bytes (8192 MiB)
+	CPUs: 3
+	Processor Vendor: GenuineIntel
+	Processor Name: QEMU Virtual CPU version 2.5+
+	Identifier: Intel64 Family 15 Model 107 Stepping 1
+	Microarchitecture: Netburst
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 3
+	Number of logical CPUs: 3
+	Graphics card #0 name: Device
+	Graphics card #0 vendor: Vendor (0x1234)
+	Graphics card #0 VRAM (MiB): 16.00
+	Graphics card #0 deviceId: 0x1111
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 9952.64
+	Virtual memory used (MiB): 1810.65
+	Swap memory total (MiB): 4096.00
+	Swap memory used (MiB): 1.51
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 57412.55, total: 79005.46
+	Space in storage for workdir (MiB): available: 57412.55, total: 79005.46
+	JVM Flags: 2 total; -Xmx8G -Xms4G
+	Server Running: true
+	Active Data Packs: vanilla, file/armored elytra v2.0.1 (MC 1.21-1.21.1).zip (incompatible), file/custom nether portals v2.3.11 (MC 1.21-1.21.1).zip (incompatible), file/double shulker shells v1.3.8 (MC 1.21-1.21.1).zip (incompatible), file/ender chest always drops v1.0.0 (MC 1.21-1.21.1).zip (incompatible), file/more mob heads v2.14.0 (MC 1.21-1.21.1).zip (incompatible), file/multiplayer sleep v2.6.8 (MC 1.21-1.21.1).zip (incompatible), file/silk touch budding amethyst v1.0.0 (MC 1.21-1.21.1).zip (incompatible)
+	Available Data Packs: file/armored elytra v2.0.1 (MC 1.21-1.21.1).zip (incompatible), file/custom nether portals v2.3.11 (MC 1.21-1.21.1).zip (incompatible), file/double shulker shells v1.3.8 (MC 1.21-1.21.1).zip (incompatible), file/ender chest always drops v1.0.0 (MC 1.21-1.21.1).zip (incompatible), file/more mob heads v2.14.0 (MC 1.21-1.21.1).zip (incompatible), file/multiplayer sleep v2.6.8 (MC 1.21-1.21.1).zip (incompatible), file/silk touch budding amethyst v1.0.0 (MC 1.21-1.21.1).zip (incompatible), minecart_improvements, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -7866680690915684486
+	Suppressed Exceptions: ~~NONE~~
+	Is Modded: Probably not. Server jar signature and brand is untouched
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  minecraft:
+    image: openjdk:21-jdk
+    working_dir: /mcdocker
+    command: java -Xmx10G -Xms8G -jar /mcdocker_1/server-1.21.1.jar nogui
+    environment:
+      EULA: "true"
+      LEVEL-SEED: -7866680690915684486
+    ports:
+      - "25565:25565"
+    volumes:
+      - "/home/michael/minecraft2/mcdocker:/mcdocker_1"
+      - "/home/michael/minecraft2:/mcdocker"
+      - "/home/michael/data:/data"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
